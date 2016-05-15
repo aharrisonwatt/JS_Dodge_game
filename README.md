@@ -26,7 +26,7 @@ Game.prototype.checkCollisions = function (){
 ###Object Collision Detection
 Collision in determined based on the distance between two objects based on their radius.  
 
-```javescript
+```javascript
 Bomb.prototype.isCollidedWith = function(otherObject){
   var dist = Math.sqrt(Math.pow(this.pos[0] - otherObject.pos[0], 2) +
     Math.pow(this.pos[1] - otherObject.pos[1], 2));
@@ -45,7 +45,7 @@ Bomb.prototype.isCollidedWith = function(otherObject){
 ###Ball Collision Physics
 Ball collision takes into the mass of both ball as well as their pervious velocities to realistically simulate ball collision.   
 
-```javescript
+```javascript
 var newThisXVel = (this.vel[0] * (this.radius - otherBall.radius) +
               (2 * otherBall.radius * otherBall.vel[0])) /
               (this.radius + otherBall.radius);
