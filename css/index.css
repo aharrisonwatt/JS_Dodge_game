@@ -1,0 +1,27 @@
+.game-instructions {
+  margin: 15px;
+  padding-top: 30vh;
+}
+
+.game-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+canvas {
+  outline: 4px
+  solid black;
+  cursor: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}

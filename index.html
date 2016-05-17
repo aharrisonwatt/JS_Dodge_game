@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Ball Dodge</title>
-    <style type='text/css'>
-      canvas { outline: 4px solid black; cursor: none;}
-      body { display: flex; flex-direction: column; align-items: center;}
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
   </head>
   <body>
     <h1>Ball Dodge</h1>
-    <canvas width="800" height="600" id="game-canvas"></canvas>
-    <script type="text/javascript" src="lib/bundle.js" charset="utf-8"> </script>
-    <ul> How to Play
-      <li>The big red ball spits out black balls </li>
-      <li>Avoid the black balls as long as you can</li>
-      <li>Every 15 seconds a rainbow ball apears</li>
-      <li>Grab the rainbow ball clear the board </li>
-    </ul>
+    <div class=game-box>
+      <ul class='game-instructions'> How to Play
+        <li>The big red ball spits out black balls </li>
+        <li>Avoid the black balls as long as you can</li>
+        <li>Every 15 seconds a rainbow ball appears</li>
+        <li>Grab the rainbow ball clear the board </li>
+      </ul>
+      <canvas width="800" height="600" id="game-canvas"></canvas>
+      <script type="text/javascript" src="lib/bundle.js" charset="utf-8"> </script>
+    </div>
   </body>
 </html>
