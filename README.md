@@ -1,5 +1,5 @@
 # Ball Dodge
-[Ball Dodge Live]("http://aharrisonwatt.github.io/JS_Dodge_game/")
+[Ball Dodge Live](http://aharrisonwatt.github.io/JS_Dodge_game/)
 
 Ball Dodge is a simple Javascript game that utilizes HTML5 canvas.  Designed with realistic ball physics and simple gameplay mechanics Ball Dodge is quick to pick up yet satisfying to play.
 
