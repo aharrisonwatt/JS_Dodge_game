@@ -1,10 +1,9 @@
-#Ball Dodge
-[Ball Dodge Live][site]
-[site]: http://aharrisonwatt.github.io/JS_Dodge_game/
+# Ball Dodge
+[Ball Dodge Live]("http://aharrisonwatt.github.io/JS_Dodge_game/")
 
 Ball Dodge is a simple Javascript game that utilizes HTML5 canvas.  Designed with realistic ball physics and simple gameplay mechanics Ball Dodge is quick to pick up yet satisfying to play.
 
-###Checking Object Collision
+### Checking Object Collision
 Two key pieces of logic allow for realistic ball interactions.  First Ball Dodge detects ball collision using a nested for loop.  This loop checks each object against every other object only once each time the game is rendered.
 
 ```javascript
@@ -23,7 +22,7 @@ Game.prototype.checkCollisions = function (){
 };
 ```
 
-###Object Collision Detection
+### Object Collision Detection
 Collision in determined based on the distance between two objects based on their radius.  
 
 ```javascript
@@ -42,7 +41,7 @@ Bomb.prototype.isCollidedWith = function(otherObject){
 };
 ```
 
-###Ball Collision Physics
+### Ball Collision Physics
 Ball collision takes into the mass of both ball as well as their pervious velocities to realistically simulate ball collision.   
 
 ```javascript
@@ -51,13 +50,13 @@ var newThisXVel = (this.vel[0] * (this.radius - otherBall.radius) +
               (this.radius + otherBall.radius);
 ```
 
-##Future Direction
+## Future Direction
 Ball Dodge was made in a limited amount of time which sadly limited the scope of project.  Given more time here are the next features I would like to implement.
 
-###Animations
+### Animations
 * Replacing all the ball animations with original artwork.
 * Adding animation to at point of contact when balls collide.
 
-###HighScore Database
+### HighScore Database
 * Rehost onto a service like heroku.
 * Integrate a rails backend to allow for a Highscore leaderboard.
